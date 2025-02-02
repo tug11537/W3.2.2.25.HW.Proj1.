@@ -1,39 +1,26 @@
-// 1. Import the all three objects (Song, Musician, Playlist) that you created in the MusicData.js module file
 
+import { Song, Musician, Playlist } from "./MusicData.js";
 
-// 2. declare a new constant and assign to it a new musician object to describe the musician for the first song.
+const musician1 = new Musician("Broadcast", "Vocals, Synths", "Experimental Electronic");
+const musician2 = new Musician("El Michels Affair", "Guitar, Bass, Drums", "Funk / Hip-Hop");
+const musician3 = new Musician("Elizabeth Fraser", "Vocals", "Trip-Hop");
 
+console.log("Musician 1:", musician1);
+console.log("Musician 2:", musician2);
+console.log("Musician 3:", musician3);
 
+const song1 = new Song("Untitled (City in Progress)", musician1, "Maida Vale Sessions");
+const song2 = new Song("Shadow Boxing", musician2, "Return to the 37th Chamber");
+const song3 = new Song("Teardrop", musician3, "Mezzanine");
 
-// 3. declare a new constant and assign to it a new musician object to describe the musician for the second song.
+console.log("Song 1:", song1);
+console.log("Song 2:", song2);
+console.log("Song 3:", song3);
 
+const myPlaylist = new Playlist("myPlaylist", song1, song2, song3);
+console.log("Playlist:", myPlaylist);
 
-
-
-// 4. declare a new constant and assign to it a new musician object to describe the musician for the third song.
-
-
-// 5. declare a new constant and assign to it a new Song object to describe the first song
-// (make sure to use the Musician object from step 2 in creating this Song object
-
-
-
-// 6. declare a new constant and assign to it a new Song object to describe the second song
-// (make sure to use the Musician object from step 3 in creating this Song object
-
-
-// 7. declare a new constant and assign to it a new Song object to describe the third song
-// (make sure to use the Musician object from step 4 in creating this Song object
-
-
-// 8. declare a new constant called myPlaylist and assign to it a new Playlist object and make sure to use the three Song objects
-//from steps 5, 6, & 7 when creating it.
-//It must be called myPlaylist
-//It must be called myPlaylist
-
-
-//9. call the .getInfo() method on myPlaylist
-
+myPlaylist.getInfo();
 
 //DO NOT EDIT BELOW THIS LINE
 //the code below here will insert the Playlist data into the webpage.
