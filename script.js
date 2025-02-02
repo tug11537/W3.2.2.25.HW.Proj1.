@@ -3,7 +3,7 @@ import { Song, Musician, Playlist } from "./MusicData.js";
 
 const musician1 = new Musician("Broadcast", "Vocals, Synths", "Experimental Electronic");
 const musician2 = new Musician("El Michels Affair", "Guitar, Bass, Drums", "Funk / Hip-Hop");
-const musician3 = new Musician("Elizabeth Fraser", "Vocals", "Trip-Hop");
+const musician3 = new Musician("Massive Attack and Elizabeth Fraser", "Vocals", "Trip-Hop");
 
 console.log("Musician 1:", musician1);
 console.log("Musician 2:", musician2);
